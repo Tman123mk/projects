@@ -1,0 +1,68 @@
+import random
+
+
+pc_points = 0
+exit = False
+person_points = 0
+
+while exit == False:
+
+    optins = ["Brick", "Pen" , "Scissors"]
+    person_input = input("Choose Brick, Pen, Scissors or exit: ")
+    pc_input = random.choice(optins)
+    
+    if user_input == "exit" :
+        print("Game end")
+        print("You wined the total score of " +str(user_points)+ " and the computer total score is " +str(pc_points))
+        exit = True
+
+    if person_input == "Brick":
+        if pc_input == "Brick":
+            print("Your input is Brick")
+            print("pc input is Brick")
+            print("It is a tie ")
+        elif pc_input == "Pen":
+            print("Your input is Brick")
+            print("pc input is pen")
+            print(" pc win")
+            pc_points += 1
+        elif pc_input == "scissors":
+            print("Your input is Brick")
+            print("pc input is scissors")
+            print("You win")
+            person_points += 1
+
+    elif person_input == "Pen":
+        if pc_input == "Brick":
+            print("Your input is pen")
+            print("pc input is Brick")
+            print("You win!")
+            person_points += 1
+        elif pc_input == "pen":
+            print("Your input is paper")
+            print("pc input is paper")
+            print("It's a tie")
+        elif pc_input == "scissors":
+            print("Your input is pen")
+            print("pc input is scissors")
+            print("pc wins")
+            pc_points += 1
+
+    elif person_input == "scissors":
+        if pc_input == "Brick":
+            print("Your input is scissors")
+            print("pc input is Brick")
+            print("pc win!")
+            pc_points += 1
+        elif pc_input == "Pen":
+            print("Your input is scissors")
+            print("Computer input is pen")
+            print("you win")
+            person_points += 1
+        elif pc_input == "scissors":
+            print("Your input is scissors")
+            print("Computer input is scissors")
+            print("it is a tie")
+
+    elif person_input != " Brick" or person_input != "Pen" or person_input != "Scissors":
+        print("Not valid  Choice")
