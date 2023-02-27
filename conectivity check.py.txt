@@ -1,0 +1,14 @@
+import urllib.request as urllib
+
+
+def sop(url):
+    print("Check connectivity ")
+    
+    response = urllib.urlopen(url)
+    print("Connected to " , URL, "succesfully")
+    print("The response of the code was: ", response.getcode())
+
+print("This is a website for connectivity check program")
+input_url = input("Enter the url of the webtsites you want to check:")
+
+sop(input_url)d))
