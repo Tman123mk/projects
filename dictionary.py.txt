@@ -1,0 +1,10 @@
+from pxDictinary import PxDictinary
+
+dicti = pxDictionary()
+
+while True:
+    words = input("INPUT YOUR WORDS: ")
+    if word == " ":
+        break
+    
+    print(dicti.meaning(word))
