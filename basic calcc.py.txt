@@ -1,0 +1,44 @@
+def adding(y, z):
+    ans = y + z
+    print(str(y) + " + " + str( z) + " = " + str(ans) + "\n")
+def subt(y, z):
+    ans = y - z
+    print(str(y) + " - " + str(z ) + " = " + str(ans) + "\n")
+def mult(y, z):
+    ans = y*z
+    print(str(y) + " * " + str(z) + " = " + str(ans) + "\n")
+def div(y, z):
+    ans = y / z
+    print(str(y) + " / " + str(z) + " = " + str(ans) + "\n")
+
+while True:
+    print("A. Addition")
+    print("B. Subtraction")
+    print("C. Multiplication")
+    print("D. Division")
+    print("E. Exit")
+    choice = input("enter your choice: ")
+
+    if choice == "A" or choice == "a":
+        print("Addition")
+        y = int(input("enter first number: "))
+        z = int(input("enter second number: "))
+        add(y, z)
+    elif choice == "B" or choice == "b":
+        print("Subtraction")
+        y = int(input("enter first number:"))
+        z = int(input("enter second number: "))
+        sub(y, z)
+    elif choice == "C" or choice == "c":
+        print("Multiplication")
+        y = int(input("enter first number:"))
+        z = int(input("enter second number: "))
+        mul(y, z)
+    elif choice == "D" or choice == "d":
+        print("Division" )
+        y = int(input("enter first number:"))
+        z = int(input("enter second number: "))
+        div(y, z)
+    elif choice == "e" or choice == "E":
+        print("program end")
+        quit()
