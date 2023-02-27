@@ -1,0 +1,8 @@
+def replace_words():
+    string = "Hi people, My name is Tebogo Ndlovu"
+    
+    word_replacemnt = input("Input the word replacemnt: ")
+word_to_replace = input("Input the words to replace: ")
+    print(string.replace(word_to_replace, word_replacemnt))
+    
+replace_worsd()
