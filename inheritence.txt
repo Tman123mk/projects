@@ -1,0 +1,19 @@
+class parent:
+    def __init__(self,name,age,id_no):
+        self.name=name
+        self.age=age
+        self.id_no=id_no
+
+    def raise_child():
+        print("was raised well")
+
+parent1=parent("Tebogo",51,"9812105395080")
+print(parent1.name)
+
+class child(parent):
+    def __init__(self,money):
+        self.money=money
+
+child1=child("R1000,000")
+print(child1.money)
+child.raise_child()
