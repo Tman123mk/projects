@@ -1,0 +1,17 @@
+import random
+num=random.random()
+print(num)
+
+num=random.randint(10,20)
+print(num)
+num=random.randrange(10,20,2)
+print(num)
+
+num=random.randrange(100,200,8)
+print(num)
+
+num=random.uniform(50,70)
+print(num)
+
+numList=random.sample(range(100,200),20)
+print(numList)
