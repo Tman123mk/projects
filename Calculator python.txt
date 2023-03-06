@@ -1,0 +1,32 @@
+print("Calculator")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+st=int(input("Enter choice(1-4):"))
+if st==1:
+   a=int(input("Enter A:"))
+   b=int(input("Enter B:"))
+   c=a+b
+   print(c)
+elif st==2:
+   a=int(input("Enter A:"))
+   b=int(input("Enter B:"))
+   c=a-b
+   print(c)
+
+elif st==3:
+   a=int(input("Enter A:"))
+   b=int(input("Enter B:"))
+   c=a*b
+   print(c)
+
+elif st==4:
+   a=int(input("Enter A:"))
+   b=int(input("Enter B:"))
+   c=a/b
+   print(c)
+
+else:
+    print("Invalid")
